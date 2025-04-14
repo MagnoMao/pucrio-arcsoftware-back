@@ -29,4 +29,5 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 Caso queria alterar os arquivos recomendo executar flask em modo desenvolvimento, pois assim ele reinicia o servidor toda vez que salvar uma alteração em algum arquivo.
 
 ```
-(env)$ flask run --host 0.0.0.0 --port 5000 --reload```
+flask run --host 0.0.0.0 --port 5000 --reload
+```
