@@ -1,0 +1,87 @@
+[2025-04-13 16:48:25,552] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:48:35,052] WARNING consulta_cep() L54   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L54  
+[2025-04-13 16:48:55,999] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:48:58,829] WARNING consulta_cep() L55   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L55  
+[2025-04-13 16:49:05,318] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:54:21,721] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:54:41,136] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:55:16,603] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:55:33,399] WARNING consulta_cep() L53   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L53  
+[2025-04-13 16:55:51,119] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:55:55,541] WARNING consulta_cep() L54   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L54  
+[2025-04-13 16:56:11,516] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 16:59:10,441] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 17:00:01,028] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 17:00:32,592] WARNING consulta_cep() L54   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L54  
+[2025-04-13 17:01:01,708] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 17:01:07,543] ERROR log_exception() L1449 Exception on /cep [GET] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\openapi.py", line 300, in wrapper
+    resp = _do_wrapper(
+        func,
+    ...<7 lines>...
+        **kwargs
+    )
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 138, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py", line 41, in consulta_cep
+    cep = query.cep.value
+          ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+[2025-04-13 17:01:27,150] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 17:01:30,175] WARNING consulta_cep() L53   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L53  
+[2025-04-13 17:44:22,800] WARNING consulta_cep() L53   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L53  
+[2025-04-13 17:45:21,071] WARNING consulta_cep() L53   Erro ao consultar o cep '[object HTMLInputElement]', Não foi possível consultar o cep :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L53  
+[2025-04-13 17:49:31,818] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:09:33,587] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:09:57,017] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:11:38,974] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:12:02,405] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:12:08,472] ERROR log_exception() L1449 Exception on /cep [GET] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\openapi.py", line 300, in wrapper
+    resp = _do_wrapper(
+        func,
+    ...<7 lines>...
+        **kwargs
+    )
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 138, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py", line 43, in consulta_cep
+    print(query(cep))
+          ~~~~~^^^^^
+TypeError: 'CepConsultaSchema' object is not callable
+[2025-04-13 18:12:17,767] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:12:40,171] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:12:52,501] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:17:48,826] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:18:04,233] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:18:06,485] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:18:25,856] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 18:34:41,750] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 19:35:14,491] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 19:36:08,123] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 

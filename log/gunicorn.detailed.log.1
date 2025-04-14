@@ -1,0 +1,116 @@
+[2025-04-13 21:52:30,118] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 21:52:42,479] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 21:52:45,198] ERROR log_exception() L1449 Exception on /endereco [POST] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\openapi.py", line 356, in wrapper
+    resp = _do_wrapper(
+        func,
+    ...<7 lines>...
+        **kwargs
+    )
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 138, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py", line 43, in add_endereco
+    endereco = Endereco(
+        cep = form.cep,
+    ...<5 lines>...
+        endereco_de = form.endereco_de
+    )
+TypeError: __init__() got an unexpected keyword argument 'complemento'
+[2025-04-13 21:54:05,342] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 21:54:38,868] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 21:54:46,311] WARNING add_endereco() L66   Erro adicionar endereço, Não foi possível adicionar o endereço :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L66  
+[2025-04-13 21:56:24,980] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:12:24,260] WARNING add_usuario() L125  Erro ao adicionar usuário 'joaozinho', Usuario de mesmo nome já salvo na base :/ - call_trace=C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py L125 
+[2025-04-13 22:16:17,885] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:16:33,261] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:16:51,648] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:54:48,036] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:55:12,509] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:55:16,773] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:55:19,151] ERROR log_exception() L1449 Exception on /endereco [POST] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1695, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'add_endereco' did not return a valid response. The function either returned None or ended without a return statement.
+[2025-04-13 22:55:41,208] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:55:42,818] ERROR log_exception() L1449 Exception on /endereco [POST] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1695, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'add_endereco' did not return a valid response. The function either returned None or ended without a return statement.
+[2025-04-13 22:56:16,719] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:56:20,078] ERROR log_exception() L1449 Exception on /endereco [POST] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1520, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1539, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1695, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'add_endereco' did not return a valid response. The function either returned None or ended without a return statement.
+[2025-04-13 22:57:19,440] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 22:57:22,428] ERROR log_exception() L1449 Exception on /endereco [POST] - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\openapi.py", line 356, in wrapper
+    resp = _do_wrapper(
+        func,
+    ...<7 lines>...
+        **kwargs
+    )
+  File "C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\flask_openapi3\do_wrapper.py", line 138, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\Magno\Documents\Projetos\pucrio-arcsoftware-back\app.py", line 46, in add_endereco
+    logradouro = responseViaCEP.logradouro,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'logradouro'
+[2025-04-13 22:58:04,059] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 23:00:12,270] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
+[2025-04-13 23:01:03,933] INFO _log() L225   * Restarting with stat - call_trace=C:\Users\Magno\Documents\Projetos\venv\Lib\site-packages\werkzeug\_internal.py L225 
